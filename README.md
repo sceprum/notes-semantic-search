@@ -1,12 +1,24 @@
 ### Installation
 
-1. Create a new virtual environment
-2. Install the requirements `python3 -m pip install -r requirements.txt`
-
-### Usage
+Create and activate a new virtual environment
 ```bash
-python3 search.py -v /path/to/directory/with/notes -n 3 'How to live healthy live?'
+python3 -m venv env
+source env/bin/activate
 ```
 
-For other command-line arguments check out `python3 search.py --help`
+Install the required dependencies:
+```python3 -m pip install -r requirements.txt```
+
+
+### Usage
+
+```bash
+python3 search.py -v /path/to/directory/with/notes -n 3 'How to live a healthy life?'
+```
+
+Replace `/path/to/directory/with/notes` with the directory containing your notes.
+Use `-n` to specify the number of results to return.
+
+For more information on available command-line arguments, run:
+```python3 search.py --help```
 
